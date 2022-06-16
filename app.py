@@ -14,7 +14,6 @@ fig = plt.figure()
 # ----------- Sidebar
 #page = st.sidebar.selectbox('Page Navigation', ["Predictor", "Model analysis"])
 st.sidebar.write("Created by Amrutha A and Ela Tejeshwar")
-st.sidebar.markdown("""---""")
 
 
 #st.sidebar.image("assets/logo.png", width=100)
