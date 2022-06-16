@@ -9,7 +9,7 @@ from tensorflow.keras.models import load_model
 import matplotlib.pyplot as plt
 import time
 
-st.title('SHIP CLASSIFIER vs YOU')  #Title
+st.title('SHIP CLASSIFIER')  #Title
 fig = plt.figure()
 # ----------- Sidebar
 #page = st.sidebar.selectbox('Page Navigation', ["Predictor", "Model analysis"])
