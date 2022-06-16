@@ -66,8 +66,9 @@ def main():
                     st.write('Wow! You are right')
                     st.balloons()
                 else:
-                    st.write(option)
-                    st.write(predictions)
+                    st.write("You were wrong!")                 
+                    st.write("Your prediction:",option)
+                    st.write("Model's prediction:",predictions)
 
                 time.sleep(1)
 
