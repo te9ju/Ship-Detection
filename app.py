@@ -50,7 +50,7 @@ def main():
         upload_columns[1].image(image, caption='Uploaded Image', use_column_width=True)
         #st.write(image.size)
     st.sidebar.markdown("""---""")
-    option = st.selectbox('Select which ship is in the image:'
+    option = st.selectbox('Select which ship you think is in the image:'
                           , ['Bulk Carrier', 'Container', 'Tanker']) # User selection
 
     class_btn = st.button("Classify") # Button to classify
@@ -90,7 +90,7 @@ def predict(image):
             'Container',
             'Tanker']
 
-    result = f"{class_names[np.argmax(prediction)]} with a {(100 * np.max(prediction)).round(2)} % confidence."
+    result = f"Ship belongs to class: {class_names[np.argmax(prediction)]}."
     predicted_result = class_names[np.argmax(prediction)]
     st.write(result)
     return predicted_result
